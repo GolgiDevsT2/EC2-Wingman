@@ -35,7 +35,6 @@ JRE_BIN		=	/usr/bin
 JAVAC		=	$(JDK_BIN)/javac
 JAVA		=	$(JRE_BIN)/java
 CLASSPATH	=	$(PKG_DIR)/common/garrick_combined.jar
-CLASSPATH	=	../../wa-16/golgi/garrick/FAKE_RELEASE_AREA/java/garrick_combined.jar
 
 all:
 	$(JAVA) -classpath $(CLASSPATH) com.openmindnetworks.golgi.garrick.Garrick -i ../Wingman.thrift  -jsf WingmanSvc.js
