@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="node_modules/aws-sdk/lib/query/|node_modules/aws-sdk/node_modules/xml2js/node_modules/sax/lib/|node_modules/aws-sdk/dist-tools/|node_modules/aws-sdk/|node_modules/aws-sdk/lib/model/|node_modules/aws-sdk/node_modules/xml2js/node_modules/sax/examples/|node_modules/aws-sdk/lib/json/|node_modules/aws-sdk/lib/xml/|node_modules/aws-sdk/node_modules/xmlbuilder/lib/|node_modules/aws-sdk/lib/protocol/|node_modules/aws-sdk/lib/services/|node_modules/aws-sdk/node_modules/xml2js/node_modules/sax/test/|node_modules/aws-sdk/lib/http/|node_modules/aws-sdk/lib/|node_modules/aws-sdk/lib/signers/|node_modules/aws-sdk/lib/credentials/|node_modules/aws-sdk/node_modules/xml2js/lib/|node_modules/aws-sdk/scripts/lib/" kind="src" path=""/>
+	<classpathentry excluding="lib/query/|node_modules/xml2js/node_modules/sax/lib/|dist-tools/|lib/model/|node_modules/xml2js/node_modules/sax/examples/|lib/json/|lib/xml/|node_modules/xmlbuilder/lib/|lib/protocol/|lib/services/|node_modules/xml2js/node_modules/sax/test/|lib/http/|lib/|lib/signers/|lib/credentials/|node_modules/xml2js/lib/|scripts/lib/" kind="src" path="node_modules/aws-sdk"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/dist-tools"/>
+	<classpathentry excluding="query/|model/|json/|xml/|protocol/|services/|http/|signers/|credentials/" kind="src" path="node_modules/aws-sdk/lib"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/lib/credentials"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/lib/http"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/lib/json"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/lib/model"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/lib/protocol"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/lib/query"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/lib/services"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/lib/signers"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/lib/xml"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/node_modules/xml2js/lib"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/node_modules/xml2js/node_modules/sax/examples"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/node_modules/xml2js/node_modules/sax/lib"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/node_modules/xml2js/node_modules/sax/test"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/node_modules/xmlbuilder/lib"/>
+	<classpathentry kind="src" path="node_modules/aws-sdk/scripts/lib"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

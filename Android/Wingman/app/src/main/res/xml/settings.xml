@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <RingtonePreference
+        android:showDefault="true"
+        android:showSilent="true"
+        android:ringtoneType="notification"
+        android:title="Wingman Notification Sound"
+        android:key="alertSound"
+        android:persistent="true"
+        android:summary="Tap Here To Change">
+    </RingtonePreference>
+    <PreferenceCategory
+        android:title="Notifications">
+    </PreferenceCategory>
+    <CheckBoxPreference
+        android:title="Orange CPU"
+        android:defaultValue="true"
+        android:key="orangeAlertEnabled"
+        android:persistent="true">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:title="Red CPU"
+        android:defaultValue="true"
+        android:key="redAlertEnabled"
+        android:persistent="true">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:title="Status Check Failed"
+        android:defaultValue="true"
+        android:key="scFailedAlertEnabled"
+        android:persistent="true">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:title="State Change"
+        android:defaultValue="true"
+        android:key="stateChangeAlertEnabled"
+        android:persistent="true">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:title="Filtered Notifications"
+        android:defaultValue="false"
+        android:key="filteredAlertEnabled"
+        android:persistent="true"
+        android:summary="Only alert for nodes matching the current filter criteria">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:title="Only Named Notifications"
+        android:defaultValue="true"
+        android:key="onlyNamedAlertEnabled"
+        android:persistent="true"
+        android:summary="Only alert for instances that have a name that is different from their instance name (avoids EMR instances)">
+    </CheckBoxPreference>
+
+
+</PreferenceScreen>

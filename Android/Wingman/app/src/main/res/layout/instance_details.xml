@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/parentLayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/instanceDetailsLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="STATUS CHECKS FAILING"
+            android:id="@+id/statusChecksFailingView"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Instance Name"
+            android:id="@+id/nameTv"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/runningView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="CPU Avg:"
+                android:id="@+id/cpuLabelTv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="100%"
+                android:id="@+id/cpuUsageTv"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <io.golgi.wingman.CPUView
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:id="@+id/cpuView"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="2.0" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="STOPPED"
+            android:id="@+id/stateView"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#aa0000" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:background="#ffe6e600"
+        android:layout_alignBottom="@+id/instanceDetailsLayout"
+        android:layout_alignTop="@+id/instanceDetailsLayout"
+        android:id="@+id/customFilterIndicator" />
+
+</RelativeLayout>
