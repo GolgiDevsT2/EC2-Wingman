@@ -42,13 +42,13 @@ apply from: '/Users/brian/Documents/Development/wa-16/golgi/libGolgi-Android/gol
 apply from: "$System.env.HOME" + '/Documents/Development/Golgi.Signage.gradle'
 
 android {
-    compileSdkVersion 20
+    compileSdkVersion 21
     buildToolsVersion "21.1.1"
 
     defaultConfig {
         applicationId "io.golgi.wingman"
         minSdkVersion 15
-        targetSdkVersion 20
+        targetSdkVersion 21
         versionCode 10003
         versionName "1.00.03"
         // versionName "9.99.99"
