@@ -22,7 +22,7 @@ var raiseOrangeCpuAlarm = function(name, cpu){
 	    },
 	    failWithGolgiException : function(golgiException){
 		console.log("raiseOrangeCpuAlarm: failed: '" + golgiException.getErrText() + "'/ " + golgiException.getErrType());
-		delete watchers[watcher];
+		delete watcherHash[watcher];
 		writeWatchers();
 	    }
 	},
@@ -41,7 +41,7 @@ var raiseRedCpuAlarm = function(name, cpu){
 	    },
 	    failWithGolgiException : function(golgiException){
 		console.log("raiseRedCpuAlarm: failed: '" + golgiException.getErrText() + "'/ " + golgiException.getErrType());
-		delete watchers[watcher];
+		delete watcherHash[watcher];
 		writeWatchers();
 	    }
 	},
@@ -60,7 +60,7 @@ var raiseStatusCheckAlarm = function(name){
 	    },
 	    failWithGolgiException : function(golgiException){
 		console.log("raiseStatusCheckAlarm: failed: '" + golgiException.getErrText() + "'/ " + golgiException.getErrType());
-		delete watchers[watcher];
+		delete watcherHash[watcher];
 		writeWatchers();
 	    }
 	},
@@ -78,7 +78,7 @@ var raiseStateChangeAlarm = function(name, oldState, newState){
 	    },
 	    failWithGolgiException : function(golgiException){
 		console.log("raiseStateChangeAlarm: failed: '" + golgiException.getErrText() + "'/ " + golgiException.getErrType());
-		delete watchers[watcher];
+		delete watcherHash[watcher];
 		writeWatchers();
 	    }
 	},
