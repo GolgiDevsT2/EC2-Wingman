@@ -109,7 +109,7 @@ var writeWatchers = function(){
 	    console.log("OK");
 	}
 	else{
-	    console.log("Write: FAIL");
+	    console.log("Write: FAIL: " + e);
 	}
     });
 };
@@ -455,7 +455,7 @@ GolgiNet.register(function(err){
 	
 	fs.readFile("APP-INSTANCES", function(e, data){
 		if(e){
-		    console.log("Zoikes, failed to load application instances: " + e);
+		    // console.log("Zoikes, failed to load application instances: " + e);
 		}
 		else{
 		    var txt = '' + data;
